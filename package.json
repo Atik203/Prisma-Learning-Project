@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "migrate": "prisma migrate dev --name init",
+    "generate": "prisma generate",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "@types/node": "^22.13.9",
