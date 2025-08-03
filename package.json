@@ -4,15 +4,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/pagination-sorting.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/create.ts",
     "migrate": "prisma migrate dev --name init",
     "generate": "prisma generate",
     "format": "prettier --write .",
+    "reset": "prisma migrate reset --force",
     "lint": "eslint ."
   },
   "dependencies": {
     "@prisma/client": "^6.12.0",
     "@types/node": "^22.13.9",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   },
