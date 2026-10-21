@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node api.js && ts-node-dev --respawn --transpile-only src/create.ts",
+    "dev": "node init && ts-node-dev --respawn --transpile-only src/create.ts",
     "migrate": "prisma migrate dev --name init",
     "generate": "prisma generate",
     "format": "prettier --write .",
